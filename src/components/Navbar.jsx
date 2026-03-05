@@ -6,7 +6,7 @@ function Navbar() {
  
   return (
     <>
-    <div className='w-full fixed top-0 left-0 z-50 bg-black/50'>
+    <div className='w-full fixed top-0 left-0 z-[9999] bg-black/50'>
       <div className='flex items-center justify-between px-5 py-4 lg:px-8'>
         <motion.h2
           initial={{ opacity: 0, x: 1000 }}
@@ -17,12 +17,12 @@ function Navbar() {
           <img src="/Hemelo Cotton Logo.png" alt="" className='w-[50px]' />
         HEMELO COTTON
         </motion.h2>
-        <div className='hidden md:flex items-center gap-12 text-white opacity-60 text-[8px]'>
+        <div className='hidden md:flex items-center gap-12 text-white/60 text-[8px]'>
           <motion.h1
             initial={{ opacity: 0, x: 1000 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1 }}
-            className='hover:opacity-100 transition-opacity duration-300'
+            className='cursor-pointer transition-colors hover:text-white hover:opacity-100'
           >
             HOME
           </motion.h1>
@@ -30,6 +30,7 @@ function Navbar() {
             initial={{ opacity: 0, x: 1000 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1 }}
+            className='cursor-pointer transition-colors hover:text-white hover:opacity-100'
           >
             PROJECTS
           </motion.h1>
@@ -37,6 +38,7 @@ function Navbar() {
             initial={{ opacity: 0, x: 1000 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1 }}
+            className='cursor-pointer transition-colors hover:text-white hover:opacity-100'
           >
             SERVICE
           </motion.h1>
@@ -77,11 +79,11 @@ function MobileMenu() {
         className={`${open ? 'pointer-events-auto' : 'pointer-events-none'} fixed top-16 left-0 w-screen bg-black/80 backdrop-blur-md border-t border-white/10`}
       >
         <div className='flex flex-col gap-4 px-6 py-6 text-white text-sm'>
-          <button className='text-left opacity-80 hover:opacity-100'>HOME</button>
-          <button className='text-left opacity-80 hover:opacity-100'>PROJECTS</button>
-          <button className='text-left opacity-80 hover:opacity-100'>SERVICE</button>
+          <button className='text-left opacity-50 hover:opacity-90'>HOME</button>
+          <button className='text-left opacity-50 hover:opacity-90'>PROJECTS</button>
+          <button className='text-left opacity-50 hover:opacity-90'>SERVICE</button>
           <hr className='border-white/10' />
-          <button className='text-left opacity-80 hover:opacity-100'>BOOK</button>
+          <button className='text-left opacity-50 hover:opacity-90'>BOOK</button>
         </div>
       </motion.div>
     </div>
