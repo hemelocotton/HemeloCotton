@@ -8,14 +8,15 @@ function Navbar() {
     <>
     <div className='w-full fixed top-0 left-0 z-50 bg-black/50'>
       <div className='flex items-center justify-between px-5 py-4 lg:px-8'>
-        <motion.h1
+        <motion.h2
           initial={{ opacity: 0, x: 1000 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className='text-white font-bold text-[12px]'
+          className='text-white  font-bold text-[30px] flex items-center justify-center gap-2' 
         >
-         SHOP
-        </motion.h1>
+          <img src="/Hemelo Cotton Logo.png" alt="" className='w-[50px]' />
+        HEMELO COTTON
+        </motion.h2>
         <div className='hidden md:flex items-center gap-12 text-white opacity-60 text-[8px]'>
           <motion.h1
             initial={{ opacity: 0, x: 1000 }}

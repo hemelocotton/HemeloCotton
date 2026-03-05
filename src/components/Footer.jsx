@@ -105,7 +105,7 @@ const Footer = () => {
         >
           Created by{" "}
           <strong style={{ fontWeight: "800", color: "white" }}>
-            SAN
+            HEMELO COTTON
           </strong>
         </span>
 
@@ -117,7 +117,7 @@ const Footer = () => {
         >
           Powered by{" "}
           <strong style={{ fontWeight: "800", color: "white" }}>
-            REACT
+            HEMELO COTTON
           </strong>
         </span>
       </div>

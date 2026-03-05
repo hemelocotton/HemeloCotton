@@ -6,6 +6,7 @@ import Creative from '../animation/Creative';
 import Caruosel from '../animation/Caruosel';
 import Collections from '../animation/Collections';
 import Connect from '../animation/Connect';
+import Button from '../animation/Button';
 
 function Hero  (){
   return (
@@ -52,7 +53,7 @@ function Hero  (){
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
           >
-          <p className= 'bg-gradient-to-r from-white/10 to-white bg-clip-text text-transparent opacity-60 text-[50px] md:text-[80px] lg:text-[80px] sm:text-[60px] font-semibold uppercase'>fresh summer</p>
+          <p className= 'bg-gradient-to-r from-white/10 to-white bg-clip-text text-transparent opacity-80 text-[50px] md:text-[80px] lg:text-[80px] sm:text-[60px] font-semibold uppercase'>fresh summer</p>
           <p className='text-white opacity-40 text-[20px] md:text-[30px] lg:text-[30px] sm:text-[30px] font-semibold uppercase '>look collection</p>
           </motion.div>
         </div>
@@ -107,6 +108,9 @@ function Hero  (){
                h-[250px] sm:h-[300px] md:h-[450px] lg:h-[650px]
                object-cover overflow-hidden"
   /> */}
+  <div className='absolute insert-0 right-0 bottom-5 md:bottom-10 sm:bottom-5 lg:bottom-10 pr-5'> 
+    <Button/>
+  </div>
 
 </div>
       </div>  
