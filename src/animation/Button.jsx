@@ -30,7 +30,7 @@ const StyledWrapper = styled.div`
   }
 
   button.learn-more {
-   width: 12rem;
+   width: 10rem;
    height: auto;
   }
 
