@@ -15,35 +15,39 @@ function Hero  (){
         
        <div className='scroll-container opacity-20'>
             <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tighter'>
+            <div>H</div>
+            <div>E</div>
+            <div>M</div>
+            <div>E</div>
+            <div>O</div>
             <div>L</div>
-            <div>U</div>
-            <div>X</div>
-            <div>U</div>
-            <div>R</div>
-            <div>Y</div>
+            <div>O</div>
             </div>
             <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tighter'>
-            <div>S</div>
+            <div>C</div>
+            <div>O</div>
+            <div>T</div>
             <div>T</div>
             <div>O</div>
-            <div>R</div>
-            <div>E</div>
+            <div>N</div>
             </div>
 
             <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tighter'>
+            <div>H</div>
+            <div>E</div>
+            <div>M</div>
+            <div>E</div>
+            <div>O</div>
             <div>L</div>
-            <div>U</div>
-            <div>X</div>
-            <div>U</div>
-            <div>R</div>
-            <div>Y</div>
+            <div>O</div>
             </div>
             <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tighter'>
-            <div>S</div>
+            <div>C</div>
+            <div>O</div>
+            <div>T</div>
             <div>T</div>
             <div>O</div>
-            <div>R</div>
-            <div>E</div>
+            <div>N</div>
             </div>
        </div>
        <div className='absolute top-50 transform -translate-y-1/2'>
@@ -54,7 +58,7 @@ function Hero  (){
           transition={{ duration: 0.5, delay: 0.6 }}
           >
           <p className= 'bg-gradient-to-r from-white/10 to-white bg-clip-text text-transparent opacity-80 text-[50px] md:text-[80px] lg:text-[80px] sm:text-[60px] font-semibold uppercase'>fresh summer</p>
-          <p className='text-white opacity-40 text-[20px] md:text-[30px] lg:text-[30px] sm:text-[30px] font-semibold uppercase '>look collection</p>
+          <p className='text-white opacity-40 text-[20px] md:text-[30px] lg:text-[30px] sm:text-[30px] font-semibold uppercase '>THE TWIN TO YOUR SKIN</p>
           </motion.div>
         </div>
       <div className="absolute inset-0 flex flex-col lg:flex-row md:flex-row
@@ -74,9 +78,10 @@ function Hero  (){
                w-full
   max-w-[400px]
   h-auto
-  lg:h-[700px]
+  lg:h-[800px]
   object-cover
-  mt-20"
+  mt-20
+ "
     />
 
     {/* TEXT ABSOLUTE TO FIRST IMAGE */}
@@ -84,14 +89,14 @@ function Hero  (){
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.8 }}
-      className="absolute -bottom-20 lg:bottom-30 md:bottom-20 lg:left-80 md:left-50
+      className="absolute -bottom-20 lg:bottom-30 md:bottom-20 lg:left-70 md:left-50
                  text-white/80 uppercase font-bold
-                 text-[30px] sm:text-[30px] md:text-[30px] lg:text-[40px]
-                 space-y-2 z-100 border-none"
+                 text-[25px] sm:text-[30px] md:text-[30px] lg:text-[30px]
+                 space-y-2 z-100 border-none w-[400px]"
     >
-      <div>#Photographer</div>
-      <div>#Fashion</div>
-      <div>#Designer</div>
+      <div>#Enterprise-Grade T-Shirt Manufacturer in India</div>
+      <div>#Trusted by 200+ Global Brands</div>
+      
     </motion.div>
 
   </div>
@@ -108,9 +113,9 @@ function Hero  (){
                h-[250px] sm:h-[300px] md:h-[450px] lg:h-[650px]
                object-cover overflow-hidden"
   /> */}
-  <div className='absolute insert-0 right-0 bottom-5 md:bottom-10 sm:bottom-5 lg:bottom-10 pr-5'> 
+  {/* <div className='absolute insert-0 right-0 bottom-3 md:bottom-10 sm:bottom-5 lg:bottom-10 pr-5'> 
     <Button/>
-  </div>
+  </div> */}
 
 </div>
       </div>  
@@ -127,10 +132,10 @@ function Hero  (){
                       leading-[1.3] text-white/50 ">
 
         {[
-          "Collaboration is at the",
-          "heart of my work. I thrive",
-          "in dynamic environments",
-          "where creativity flows"
+          "Fresh Summer – THE TWIN TO YOUR SKIN",
+          "We Manufacture - ",
+          "Everything You Need,",
+          "All in One Place."
         ].map((text, index) => (
           <motion.div
             key={index}
@@ -173,10 +178,7 @@ function Hero  (){
 
           <p className="text-white/50 text-sm md:text-base 
                         uppercase leading-relaxed tracking-wide line-clamp-3">
-            We are committed to advising our clients throughout all crucial
-            stages of a dispute: we engage with our clients before a dispute
-            reaches its peak to evaluate all options before initiating a claim
-            or anticipating a potential claim against them.
+            From basics to fashion-forward fits, Hemelo Cotton manufactures a wide range of premium-quality apparel. Whether you’re launching a streetwear brand, building a corporate uniform line, or stocking up for an event — we’ve got you covered. If it’s made from fabric, we can make it for you.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -184,13 +186,13 @@ function Hero  (){
             <button className="bg-white/50 text-black hover:text-white hover:bg-white/70 
                                px-8 py-3 uppercase text-sm font-bold 
                                 transition-all duration-300 border-none">
-              About Me
+             Talk to Sales Expert
             </button>
 
             <button className="bg-white text-black hover:text-white hover:bg-white/50 
                                px-8 py-3 uppercase text-sm font-bold 
                               transition-all duration-300 border-none">
-              Shop Now →
+              Get Sample →
             </button>
 
           </div>
@@ -201,31 +203,6 @@ function Hero  (){
     </div>
   </div>
 </div>
-        <div><hr className='border-white/20 '/></div>
-
-         <div className='w-full overflow-hidden'>
-            <Pattern />
-        </div>
-        <div>
-            <Visual />
-        </div>
-        <div><hr className='border-white/20'/></div>
-
-        <div className='w-full  overflow-hidden'>
-            <Pattern/>
-        </div>
-        <div>
-            <Creative/>
-        </div>
-        <div className="">
-            <Caruosel/>
-        </div>
-        <div><hr className='border-white/20'/></div>
-        <div>
-            <Collections/>
-            <Connect/>
-        </div>
-       
 </div>
 );
 }

@@ -5,31 +5,58 @@ const stories = [
   {
     id: 1,
     date: "Aug 22, 2023",
-    title: "Artworks That Tell Engaging Stories",
+    title: "Premium Supima Cotton T-Shirt Manufacturer in India",
     category: "Technology",
-    image: "https://cdn.prod.website-files.com/6776c7fbf90876351b9f33dd/6777f92b37458dfc05db5bf5_image-3.jpg",
+    image: "/cotton1.jpg",
+    fabric:"Supima Cotton "
   },
   {
     id: 2,
     date: "July 13, 2023",
-    title: "Modern Beauty Editorial",
+    title: "GOTS-Certified Organic Cotton Clothing Manufacturer In India",
     category: "Design",
-    image: "https://cdn.prod.website-files.com/6776c7fbf90876351b9f33dd/6777f99240ff1a1e85d02c98_image-2.jpg",
+    image: "/cotton2.webp",
+    fabric:"Organic Cotton"
   },
   {
     id: 3,
     date: "June 02, 2023",
-    title: "Minimal Aesthetic Portrait",
+    title: "High-Quality Bamboo Cotton Clothing Manufacturer In India",
     category: "Photography",
-    image: "https://cdn.prod.website-files.com/6776c7fbf90876351b9f33dd/6777f9aa43cf6f2336dc0417_image-1.jpg",
+    image: "/cotton3.webp",
+    fabric:"Bamboo Cotton"
   },
   {
     id: 4,
     date: "May 18, 2023",
-    title: "Color & Form in Motion",
+    title: "Suvin Cotton T-Shirt Manufacturer in India",
     category: "Branding",
-    image: "https://cdn.prod.website-files.com/6776c7fbf90876351b9f33dd/6777f9f7cb5617c42380cc95_image.jpg",
+    image: "/cotton4.webp",
+    fabric:"Suvin Cotton"
   },
+  {
+    id: 5,
+    date: "April 25, 2023",
+    title: "Luxurious Australian Cotton Apparel Manufacturer In India",
+    category: "Technology",
+    image: "/cotton5.webp",
+    fabric:"Australian Cotton"
+  },
+  {
+    id: 6,
+    date: "March 10, 2023",
+    title: "Premium Tencel Lyocell Clothing Manufacturer In India",
+    category: "Technology",
+    image: "/cotton5.webp",
+    fabric:"Premium Tencel Lyocell"
+  },{
+    id: 7,
+    date: "February 05, 2023",
+    title: "Premium Mercerized Cotton T-Shirts Manufacturer In India",
+    category: "Technology",
+    image: "/cotton6.webp",
+    fabric:"Premium Mercerized Cotton"
+  }
 ];
 
 function useScrollProgress(ref) {
@@ -144,7 +171,7 @@ function Card({ story, index, total }) {
             letterSpacing: "0.1em",
             alignSelf: "start",
           }}>
-            Visual Storytelling
+            {story.fabric}
           </span>
 
           {/* Top-right: date */}
@@ -270,7 +297,7 @@ export default function VisualStory() {
               color: "white",
 
             }}>
-              Works
+              Fabric
             </h1>
             <span style={{
               fontFamily: "'Barlow', sans-serif",

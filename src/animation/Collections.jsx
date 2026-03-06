@@ -7,7 +7,7 @@ const Collections = () => {
         <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-8'>
             <p className=' text-white text-[20px] md:text-xl opacity-60'>2026 Summer <br/> Collections</p>
             <div className=' text-white font-bold text-[50px] md:text-6xl lg:text-[80px] leading-tight md:leading-[1.05] max-w-[18ch]'>
-              Your statement look starts here.
+              Who We Serve 
             </div>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 py-10 md:py-16'>
@@ -20,7 +20,7 @@ const Collections = () => {
             transition={{ duration: 0.5, delay: 1}}
             >
             <img
-                src="/col1.webp"
+                src="/car.webp"
                 alt=""
                 className="rounded-2xl w-full h-auto "
             />
@@ -31,8 +31,8 @@ const Collections = () => {
                             group-hover:opacity-100 group-hover:translate-y-0
                             transition-all duration-300 ease-in-out">
 
-                <p className="text-white font-bold pb-6 text-2xl md:text-3xl lg:text-[50px] text-center">
-                Stylish Jacket Crafted
+                <p className="text-white font-bold pb-6 text-md md:text-xl lg:text-[30px] text-center">
+               White Label T-Shirt Manufacturing for Global Retail Brands
                 </p>
 
             </div>
@@ -46,7 +46,7 @@ const Collections = () => {
             transition={{ duration: 0.5, delay: 1.2}}
             >
             <img
-                src="/col2.webp"
+                src="/car1.webp"
                 alt=""
                 className="rounded-2xl w-full h-auto"
             />
@@ -57,8 +57,8 @@ const Collections = () => {
                             group-hover:opacity-100 group-hover:translate-y-0
                             transition-all duration-300 ease-in-out">
 
-                <p className="text-white font-bold pb-6 text-2xl md:text-3xl lg:text-[50px] text-center">
-                Stylish Jacket Crafted
+                <p className="text-white font-bold pb-6 text-2xl md:text-3xl lg:text-[30px] text-center">
+               Trusted by Fortune 500 Companies for Corporate T-Shirts & Events
                 </p>
 
             </div>
@@ -72,7 +72,7 @@ const Collections = () => {
             transition={{ duration: 0.5, delay: 1.4}}   
             >   
             <img
-                src="/col3.webp"
+                src="/car2.webp"
                 alt=""
                 className="rounded-2xl w-full h-auto"
             />
@@ -83,8 +83,8 @@ const Collections = () => {
                             group-hover:opacity-100 group-hover:translate-y-0
                             transition-all duration-300 ease-in-out">
 
-                <p className="text-white font-bold pb-6 text-2xl md:text-3xl lg:text-[50px] text-center">
-                Stylish Jacket Crafted
+                <p className="text-white font-bold pb-6 text-md md:text-xl lg:text-[30px] text-center">
+                Bulk Institutional Clothing Supplier for Schools, Corporates & Events
                 </p>
 
             </div>
@@ -98,9 +98,9 @@ const Collections = () => {
             transition={{ duration: 0.5, delay: 1.6}}   
             >       
             <img
-                src="/col4.webp"
+                src="/car3.webp"
                 alt=""
-                className="rounded-2xl w-full h-auto"
+                className="rounded-2xl w-full h-auto object-fit-cover"
             />
 
             <div className="absolute inset-0 flex items-end justify-center 
@@ -109,8 +109,8 @@ const Collections = () => {
                             group-hover:opacity-100 group-hover:translate-y-0
                             transition-all duration-300 ease-in-out">
 
-                <p className="text-white font-bold pb-6 text-2xl md:text-3xl lg:text-[50px] text-center">
-                Stylish Jacket Crafted
+                <p className="text-white font-bold pb-6 text-md md:text-xl lg:text-[30px] text-center">
+                T-Shirt Manufacturing for Lifestyle & Startup Brands
                 </p>
 
             </div>

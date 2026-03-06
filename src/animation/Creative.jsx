@@ -4,27 +4,27 @@ import { useState } from "react";
 const services = [
   {
     id: "creative",
-    label: "Creative Design",
+    label: "Knitting Structure",
     image:
-      "/land1.jpg",
+      "/print2.jpg",
   },
   {
     id: "social",
-    label: "Social Media",
+    label: "Fabric Finishing",
     image:
-      "/land2.jpg",
+      "/print3.jpg",
   },
   {
     id: "rebranding",
-    label: "Rebranding",
+    label: "Customization",
     image:
-      "https://cdn.prod.website-files.com/6776c7fbf90876351b9f33b0/677fec53a3dd827639b77ec4_image-1.jpg",
+      "print4.jpg",
   },
   {
     id: "uiux",
-    label: "UI / UX",
+    label: "Printing",
     image:
-      "https://cdn.prod.website-files.com/6776c7fbf90876351b9f33b0/677fec53cbcbe1bc6919939d_image-2.jpg",
+      "/print.jpg",
   },
 ];
 

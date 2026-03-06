@@ -4,27 +4,31 @@ import { useState, useEffect, useRef } from "react";
 const testimonials = [
   {
     id: 1,
-    quote: "I love how easy it was to personalize Emma to fit my style. The template's flexibility allowed me to highlight my work effortlessly and stand out in my industry.",
-    name: "ALEXO Branding, Grace & Daniel - CEO & Cofounder",
-    image: "https://cdn.prod.website-files.com/6776c7fbf90876351b9f33b0/6796b199ff8cd7fa1501fd87_Testimonial%20Image%2002.jpg",
+    quote: "With a monthly production capacity of 150000+ T-shirts, 200+ advanced garment machines, and a structured production tracking system with strict quality control, Varthagam International is your trusted partner for bulk T-shirt orders, private label apparel, and corporate clothing manufacturing.",
+    name: "Hemelo Global",
+    image: "car.webp",
+    fabric:"Large-Scale T-Shirt Manufacturing with Global Export Support"
   },
   {
     id: 2,
-    quote: "Emma helped me showcase my work beautifully! The design is sleek, minimal, and exactly what I needed to make a lasting impression on my clients.",
-    name: "ALEXO Branding, Grace & Daniel - CEO & Cofounder",
-    image: "https://cdn.prod.website-files.com/6776c7fbf90876351b9f33b0/6796b1999725187acc18de78_Testimonial%20Image%2001.jpg",
+    quote: "We specialize in private label T-shirt manufacturing in India, offering end-to-end customization from fabric selection to packaging. Our services include custom T-shirt printing, embroidery, labeling, and premium finishing, giving your brand a complete custom clothing manufacturing solution.",
+    name: "Hemelo Global",
+    image: "car2.webp",
+    fabric:"Full Customization Support for T-Shirt Manufacturing"
   },
   {
     id: 3,
-    quote: "Emma gave my portfolio a professional edge that truly reflects my creativity. It's clean, responsive, and has the perfect balance of style and functionality.",
-    name: "ALEXO Branding, Grace & Daniel - CEO & Cofounder",
-    image: "https://cdn.prod.website-files.com/6776c7fbf90876351b9f33b0/6796b198cf5531d40f092875_Testimonial%20Image%2003.jpg",
+    quote: "We work with Supima cotton, GOTS-certified organic cotton, and Tencel fabrics, ensuring the highest global standards. With an in-house R&D team for fabric composition matching, we provide custom fabric blends, sustainable fabrics, and eco-friendly textile solutions, bringing any fabric idea you imagine to life.",
+    name: "Hemelo Global",
+    image: "car3.webp",
+    fabric:"Certified Fabric Excellence for Premium T-Shirt Manufacturing"
   },
   {
     id: 4,
-    quote: "The Emma template offers a modern aesthetic with great animations that keep my audience engaged. It's the perfect choice for creatives looking to impress.",
-    name: "ALEXO Branding, Grace & Daniel - CEO & Cofounder",
-    image: "https://cdn.prod.website-files.com/6776c7fbf90876351b9f33b0/6796b198b773d1b388672154_Testimonial%20Image%2004.jpg",
+    quote: "We provide worldwide T-shirt export services, with door-to-door delivery across the globe. All GST, IGST, and export documentation are fully handled by our team, ensuring a seamless clothing export process from India. From production to shipping, we take care of every detail until your goods safely reach your destination.",
+    name: "Hemelo Global",
+    image: "car4.jpg",
+    fabric:"Scalable Global T-Shirt Manufacturing & Delivery"
   },
 ];
 
@@ -85,7 +89,7 @@ export default function Carousel() {
           font-size: clamp(3rem, 5vw, 3rem);
           color:#f0ece3;
           line-height: 1.05;
-          max-width: 500px;
+          max-width: 700px;
           margin-bottom: 0.75rem;
         }
         .t-header p {
@@ -142,6 +146,7 @@ export default function Carousel() {
           display: flex;
           align-items: center;
           min-height: clamp(200px, 26vw, 360px);
+          line-clamp: 4;
         }
 
         .t-quote {
@@ -153,6 +158,11 @@ export default function Carousel() {
           line-height: 1.15;
           letter-spacing: 0.02em;
           transition: opacity 0.42s ease, transform 0.42s ease;
+          line-clamp: 4;
+          display: -webkit-box;
+          -webkit-line-clamp: 5;   /* number of lines */
+          -webkit-box-orient: vertical;
+          overflow: hidden;
         }
 
         .t-quote.exit-next { opacity: 0; transform: translateY(20px); }
@@ -241,8 +251,8 @@ export default function Carousel() {
 
           {/* Header */}
           <div className="t-header">
-            <h2 className="text-white font-bold uppercase">Testimonials from the hearts of our clients!</h2>
-            <p>Don't Miss a Moment—Let's Make Memories Together.</p>
+            <h2 className="text-white font-bold uppercase w-full text-left">{t.fabric}</h2>
+            <p className="text-white font-bold uppercase w-full text-left">Delivering Exceptional T-Shirt Quality Since 2010</p>
           </div>
 
           {/* Body */}
