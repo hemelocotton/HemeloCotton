@@ -107,9 +107,9 @@ function Hero  (){
                h-[250px] sm:h-[300px] md:h-[450px] lg:h-[650px]
                object-cover overflow-hidden"
   /> */}
-  <div className='absolute insert-0 right-0 bottom-3 md:bottom-10 sm:bottom-5 lg:bottom-10 pr-5'> 
+  {/* <div className='absolute insert-0 right-0 bottom-3 md:bottom-10 sm:bottom-5 lg:bottom-10 pr-5'> 
     <Button/>
-  </div>
+  </div> */}
 
 </div>
       </div>  
