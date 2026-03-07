@@ -8,7 +8,7 @@ function Hero  (){
       <div className="relative flex items-center justify-between h-[100svh] px-4 md:px-10 overflow-hidden bg-black pt-16 md:pt-20">
         
        <div className='scroll-container opacity-20'>
-            <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tighter'>
+            <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tight'>
             <div>H</div>
             <div>E</div>
             <div>M</div>
@@ -17,7 +17,7 @@ function Hero  (){
             <div>L</div>
             <div>O</div>
             </div>
-            <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tighter'>
+            <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tight'>
             <div>C</div>
             <div>O</div>
             <div>T</div>
@@ -26,7 +26,7 @@ function Hero  (){
             <div>N</div>
             </div>
 
-            <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tighter'>
+            <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tight'>
             <div>H</div>
             <div>E</div>
             <div>M</div>
@@ -35,7 +35,7 @@ function Hero  (){
             <div>L</div>
             <div>O</div>
             </div>
-            <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tighter'>
+            <div className='text-[140px] md:text-[360px] lg:text-[600px] flex font-semibold text-white tracking-tight'>
             <div>C</div>
             <div>O</div>
             <div>T</div>
@@ -51,8 +51,8 @@ function Hero  (){
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
           >
-          <p className= 'bg-gradient-to-r from-white/10 to-white bg-clip-text text-transparent opacity-80 text-[50px] md:text-[80px] lg:text-[80px] sm:text-[60px] font-semibold uppercase'>fresh summer</p>
-          <p className='text-white opacity-40 text-[20px] md:text-[30px] lg:text-[30px] sm:text-[30px] font-semibold uppercase '>THE TWIN TO YOUR SKIN</p>
+          <p className= 'bg-gradient-to-r from-white/10 to-white bg-clip-text text-transparent opacity-80 text-[40px] md:text-[60px] lg:text-[70px] sm:text-[60px] font-semibold uppercase'>THE TWIN TO YOUR SKIN</p>
+          <p className='text-white opacity-40 text-[20px] md:text-[30px] lg:text-[30px] sm:text-[30px] font-semibold uppercase '>HEMELO COTTON</p>
           </motion.div>
         </div>
       <div className="absolute inset-0 flex flex-col lg:flex-row md:flex-row
@@ -126,7 +126,7 @@ function Hero  (){
                       leading-[1.3] text-white/50 ">
 
         {[
-          "Fresh Summer – THE TWIN TO YOUR SKIN",
+          "THE TWIN TO YOUR SKIN",
           "We Manufacture - ",
           "Everything You Need,",
           "All in One Place."

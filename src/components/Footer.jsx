@@ -17,8 +17,8 @@ const Footer = () => {
 
   const links = {
     Links: ["Home", "Projects"],
-    Template: ["Style Guide", "Licensing", "Instruction", "Change Log"],
-    "Social Media": ["Facebook", "Instagram", "Behance", "Unsplash"],
+    Fabrics: ["Cotton", "Linen", "Polyester", "Ribbon"],
+    "Social Media": ["Facebook", "Instagram", "LinkedIn", "Twitter"],
   };
 
   return (

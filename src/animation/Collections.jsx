@@ -98,7 +98,7 @@ const Collections = () => {
             transition={{ duration: 0.5, delay: 1.6}}   
             >       
             <img
-                src="/car3.webp"
+                src="/car.jpg"
                 alt=""
                 className="rounded-2xl w-full h-auto object-fit-cover"
             />
