@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from 'react'
 import './App.css'
 
@@ -12,13 +13,15 @@ import Caruosel from './animation/Caruosel'
 import Collections from './animation/Collections'
 import Connect from './animation/Connect'
 
-function App() {
+import SupimaCotton from './pages/SupimaCotton'
 
+
+
+function HomePage() {
   return (
     <>
       <Navbar />
 
-      {/* ABOUT / HOME */}
       <section id="home">
         <Hero />
       </section>
@@ -58,8 +61,26 @@ function App() {
       </section>
 
       <Footer />
-
     </>
+  )
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/supimacotton" element={<SupimaCotton />} />
+        {/* <Route path="/organiccotton" element={<OrganicCotton />} />
+        <Route path="/highqualitybamboocotton" element={<HighQualityBambooCotton />} />
+        <Route path="/suvincotton" element={<SUVICotton />} />
+        <Route path="/australiancotton" element={<AustralianCotton />} />
+        <Route path="/premiumtencellyocell" element={<PremiumTenCelllyOCell />} />
+        <Route path="/premiummercerizedcotton" element={<PremiumMercerizedCotton />} /> */}
+      </Routes>
+
+    </BrowserRouter>
   )
 }
 

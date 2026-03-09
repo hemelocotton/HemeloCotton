@@ -1,5 +1,6 @@
 "use client"
 import { useRef, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const stories = [
   {
@@ -86,6 +87,31 @@ function Card({ story, index, total }) {
   const ref = useRef(null);
   const progress = useScrollProgress(ref);
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (story.id === 1) {
+      navigate("/supimacotton");   // 👈 page route
+    }
+    else if (story.id === 2) {
+      navigate("/organiccotton");   // 👈 page route
+    }
+    else if (story.id === 3) {
+      navigate("/highqualitybamboocotton");   // 👈 page route
+    }
+    else if (story.id === 4) {
+      navigate("/suvincotton");   // 👈 page route
+    }
+    else if (story.id === 5) {
+      navigate("/australiancotton");   // 👈 page route
+    }
+    else if (story.id === 6) {
+      navigate("/premiumtencellyocell");   // 👈 page route
+    }
+    else if (story.id === 7) {
+      navigate("/premiummercerizedcotton");   // 👈 page route
+    }
+  };
 
   const stickyTop = `calc(clamp(64px, 10vw, 120px) + ${index * 16}px)`;
 
@@ -104,6 +130,7 @@ function Card({ story, index, total }) {
       }}
     >
       <div
+       onClick={handleClick}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{
