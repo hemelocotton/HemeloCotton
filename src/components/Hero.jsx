@@ -5,8 +5,8 @@ import Button from '../animation/Button';
 function Hero  (){
   return (
     <div className='bg-black'>
-      <div className='flex items-center justify-center'>
-     <div className="flex flex-col lg:flex-row items-center justify-center bg-black px-4 md:px-10 pt-20 lg:pt-32 gap-10">
+      <div className='flex items-center justify-center h-[90vh]'>
+     <div className="flex flex-col lg:flex-row items-center justify-center bg-black px-4 md:px-10 pt-30 lg:pt-32 gap-10">
 
       {/* TEXT SECTION */}
       <motion.div
@@ -29,6 +29,25 @@ function Hero  (){
           global organizations, and thousands of clothing brands across
           20 countries.
         </p>
+        <h2 className="text-white opacity-90 text-[22px] sm:text-[28px] md:text-[36px] lg:text-[45px] font-semibold uppercase leading-snug mt-8">
+          who are you?
+        </h2>
+        <div className="flex flex-row  sm:flex-row md:flex-row lg:flex-row gap-4 mt-4  items-start ">
+
+            <p className="bg-white text-black hover:text-white hover:bg-white/50 
+                               px-8 py-3 uppercase text-sm font-bold 
+                                transition-all duration-300 border-none">
+            Existing Company
+            </p>
+
+            <p className="bg-white text-black hover:text-white hover:bg-white/50 
+                               px-8 py-3 uppercase text-sm font-bold 
+                              transition-all duration-300 border-none">
+             Startup Brand
+            </p>
+
+          </div>
+
       </motion.div>
 
       {/* IMAGE SECTION */}
@@ -50,7 +69,7 @@ function Hero  (){
      </div>
 
   <div className=" px-4 md:px-10 md:ml-10">
-  <div className="bg-black min-h-screen px-6 md:px-12 lg:px-24 py-2 md:py-20">
+  <div className="bg-black min-h-screen px-6 md:px-12 lg:px-24 py-10 md:py-20 lg:py-60">
 
     {/* Responsive Flex */}
     <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
