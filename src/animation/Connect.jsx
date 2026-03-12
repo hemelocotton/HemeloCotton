@@ -55,11 +55,11 @@ function Connect() {
 
           <div className="flex flex-col items-start justify-center gap-5">
             <div className="text-[20px] font-bold text-white opacity-60">
-              Phone: +1 (800) 123-4567
+              Phone: +91 85080 80206
             </div>
 
             <div className="text-[20px] font-bold text-white opacity-60">
-              Email: info@hemeolo.com
+              Email: hemelocotton@gmail.com
             </div>
 
             <div>

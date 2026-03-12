@@ -64,7 +64,7 @@ function Navbar() {
           >
             Contact
           </motion.h1>
-          <motion.h1
+          {/* <motion.h1
             initial={{ opacity: 0, x: 1000 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1 }}
@@ -72,7 +72,7 @@ function Navbar() {
             onClick={() => handleNavigate('collections')}
           >
             FAQ
-          </motion.h1>
+          </motion.h1> */}
           <motion.h1
             initial={{ opacity: 0, x: 1000 }}
             animate={{ opacity: 1, x: 0 }}
@@ -115,7 +115,6 @@ function MobileMenu({ onNavigate }) {
           <button className='text-left opacity-50 hover:opacity-90 uppercase' onClick={() => { onNavigate('fabrics'); setOpen(false) }}>Fabrics</button>
           <button className='text-left opacity-50 hover:opacity-90 uppercase' onClick={() => { onNavigate('customization'); setOpen(false) }}>Customization</button>
           <button className='text-left opacity-50 hover:opacity-90 uppercase' onClick={() => { onNavigate('contact'); setOpen(false) }}>Contact</button>
-          <button className='text-left opacity-50 hover:opacity-90 uppercase' onClick={() => { onNavigate('collections'); setOpen(false) }}>FAQ</button>
           <button className='text-left opacity-50 hover:opacity-90 uppercase' onClick={() => { onNavigate('connect'); setOpen(false) }}>Talk to Manufacturing Expert</button>
           <hr className='border-white/10' />
           <button className='text-left opacity-50 hover:opacity-90'>BOOK</button>
