@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <>
     <div className='w-full fixed top-0 left-0 z-[9999] bg-black/50'>
-      <div className='flex items-center justify-between px-5 py-4 lg:px-8'>
+      <div className='flex items-center justify-between px-5  lg:px-8'>
         <motion.div
           initial={{ opacity: 0, x: 1000 }}
           animate={{ opacity: 1, x: 0 }}

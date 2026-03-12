@@ -97,10 +97,10 @@ function Connect() {
       </div>
 
       {/* HUBSPOT POPUP */}
-        {showForm && (
+         {showForm && (
   <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4">
 
-    <div className="bg-white rounded-lg relative w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6 sm:p-8 ">
+    <div className="bg-white rounded-lg relative w-full sm:max-w-xl md:max-w-2xl max-h-[90vh] overflow-y-auto p-5 sm:p-8">
 
       {/* Close Button */}
       <button
@@ -113,9 +113,9 @@ function Connect() {
       {/* HubSpot Form */}
       <div
         className="hs-form-frame w-full"
-        data-region="na1"
-        data-form-id="37a433e7-0348-43a4-8d7f-9a1cbcb1a0eb"
-        data-portal-id="8237042"
+        data-region="na2"
+        data-form-id="a2dfc6ff-9c79-459c-9bcc-fdf12c54435b"
+        data-portal-id="245488615"
       ></div>
 
     </div>
@@ -139,6 +139,22 @@ function Connect() {
         .marquee-track:hover {
           animation-play-state: paused;
         }
+          .hs-form-frame,
+.hs-form-frame iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.hs-form-frame form {
+  width: 100% !important;
+}
+
+.hs-form-frame input,
+.hs-form-frame textarea,
+.hs-form-frame select {
+  width: 100% !important;
+  box-sizing: border-box;
+}
       `}</style>
 
     </div>
