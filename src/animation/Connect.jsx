@@ -1,20 +1,17 @@
-"use client"
-import { useState } from "react";
+"use client";
+import { useState, useEffect } from "react";
 
 function Connect() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [focused, setFocused] = useState(null);
-  const [submitted, setSubmitted] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
-  const handleSubmit = () => {
-    if (email && message) {
-      setSubmitted(true);
-      setTimeout(() => setSubmitted(false), 3000);
-      setEmail("");
-      setMessage("");
-    }
-  };
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://js.hsforms.net/forms/embed/v2.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
 
   const images = ["/model2.png", "/model3.png", "/model4.png", "/model5.png"];
   const loopImages = [...images, ...images, ...images];
@@ -24,14 +21,14 @@ function Connect() {
       className="flex flex-col lg:flex-row bg-black min-h-screen"
       style={{ fontFamily: "'Arial Black', 'Arial Bold', sans-serif" }}
     >
-      {/* ───────── LEFT: CONTACT SECTION ───────── */}
+      {/* LEFT SECTION */}
       <div className="w-full lg:w-1/2 flex items-center px-6 lg:px-12 py-16">
         <div className="max-w-[580px] w-full">
-          
+
           <h1
             style={{
               color: "#f0ece3",
-              fontSize: "clamp(2.2rem, 4vw, 3.2rem)",
+              fontSize: "clamp(2.2rem, 3vw, 2rem)",
               fontWeight: 900,
               lineHeight: 1.05,
               textTransform: "uppercase",
@@ -53,94 +50,34 @@ function Connect() {
               maxWidth: "480px",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur. Ipsum dignissim vitae
-            aliquet enim. Nunc sed gravida nec eget vitae duis purus.
+            Get in touch with us today and let's start creating something great together.
           </p>
 
-          {/* Email */}
-          <div
-            style={{
-              border: `1px solid ${focused === "email" ? "#a0998e" : "#4a4744"}`,
-              borderRadius: "4px",
-              marginBottom: "8px",
-              transition: "0.2s",
-            }}
-          >
-            <input
-              type="email"
-              placeholder="Your Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              onFocus={() => setFocused("email")}
-              onBlur={() => setFocused(null)}
-              style={{
-                width: "100%",
-                padding: "18px 20px",
-                background: "transparent",
-                border: "none",
-                outline: "none",
-                color: "#f0ece3",
-                fontSize: "0.95rem",
-                fontFamily: "Georgia, serif",
-              }}
-            />
-          </div>
+          <div className="flex flex-col items-start justify-center gap-5">
+            <div className="text-[20px] font-bold text-white opacity-60">
+              Phone: +1 (800) 123-4567
+            </div>
 
-          {/* Message */}
-          <div
-            style={{
-              border: `1px solid ${focused === "message" ? "#a0998e" : "#4a4744"}`,
-              borderRadius: "4px",
-              position: "relative",
-              transition: "0.2s",
-            }}
-          >
-            <textarea
-              placeholder="Your Message *"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              onFocus={() => setFocused("message")}
-              onBlur={() => setFocused(null)}
-              rows={8}
-              style={{
-                width: "100%",
-                padding: "18px 20px",
-                paddingBottom: "60px",
-                background: "transparent",
-                border: "none",
-                outline: "none",
-                color: "#f0ece3",
-                fontSize: "0.95rem",
-                fontFamily: "Georgia, serif",
-                resize: "none",
-              }}
-            />
+            <div className="text-[20px] font-bold text-white opacity-60">
+              Email: info@hemeolo.com
+            </div>
 
-            <div style={{ position: "absolute", bottom: "16px", right: "16px" }}>
-              <button
-                onClick={handleSubmit}
-                style={{
-                  backgroundColor: submitted ? "#6b8f5e" : "#c8c0b0",
-                  color: "#2d2d2d",
-                  border: "none",
-                  padding: "12px 22px",
-                  fontSize: "0.75rem",
-                  fontWeight: 900,
-                  letterSpacing: "1.5px",
-                  textTransform: "uppercase",
-                  cursor: "pointer",
-                  borderRadius: "3px",
-                  transition: "0.2s",
-                }}
+            <div>
+              <p
+                onClick={() => setShowForm(true)}
+                className="bg-white text-black hover:text-white hover:bg-white/50 
+                px-8 py-3 uppercase text-sm font-bold
+                transition-all duration-300 border-none cursor-pointer"
               >
-                {submitted ? "SENT ✓" : "CONTACT ME ›"}
-              </button>
+                Get Sample →
+              </p>
             </div>
           </div>
+
         </div>
       </div>
 
-      {/* ───────── RIGHT: MARQUEE SECTION ───────── */}
+      {/* RIGHT MARQUEE */}
       <div className="w-full lg:w-[80%] overflow-hidden flex items-center py-10">
         <div className="marquee-track">
           {loopImages.map((src, i) => (
@@ -159,6 +96,33 @@ function Connect() {
         </div>
       </div>
 
+      {/* HUBSPOT POPUP */}
+        {showForm && (
+  <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4">
+
+    <div className="bg-white rounded-lg relative w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6 sm:p-8 ">
+
+      {/* Close Button */}
+      <button
+        onClick={() => setShowForm(false)}
+        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white"
+      >
+        ✕
+      </button>
+
+      {/* HubSpot Form */}
+      <div
+        className="hs-form-frame w-full"
+        data-region="na1"
+        data-form-id="37a433e7-0348-43a4-8d7f-9a1cbcb1a0eb"
+        data-portal-id="8237042"
+      ></div>
+
+    </div>
+
+  </div>
+)}
+
       <style>{`
         .marquee-track {
           display: flex;
@@ -176,6 +140,7 @@ function Connect() {
           animation-play-state: paused;
         }
       `}</style>
+
     </div>
   );
 }

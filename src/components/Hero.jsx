@@ -2,10 +2,20 @@ import React from 'react'
 import { motion } from "framer-motion";
 import Button from '../animation/Button';
 import TextScroll from '../animation/Textscroll';
+import { useState, useEffect } from 'react';
 
 
 
 function Hero  (){
+
+    const [showForm, setShowForm] = useState(false);
+
+     useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://js.hsforms.net/forms/embed/v2.js";
+        script.async = true;
+        document.body.appendChild(script);
+      }, []);
   return (
     <div className='bg-black'>
       <div className='flex items-center justify-center h-[90vh]'>
@@ -137,13 +147,13 @@ function Hero  (){
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
 
-            <p className="bg-white text-black hover:text-white hover:bg-white/50 
+            <p onClick={() => setShowForm(true)}  className="bg-white text-black hover:text-white hover:bg-white/50 
                                px-8 py-3 uppercase text-sm font-bold 
                                 transition-all duration-300 border-none">
              Talk to Sales Expert
             </p>
 
-            <p className="bg-white text-black hover:text-white hover:bg-white/50 
+            <p onClick={() => setShowForm(true)} className="bg-white text-black hover:text-white hover:bg-white/50 
                                px-8 py-3 uppercase text-sm font-bold 
                               transition-all duration-300 border-none">
               Get Sample →
@@ -158,8 +168,33 @@ function Hero  (){
   </div>
 </div>
        
-       
+       {showForm && (
+  <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4">
+
+    <div className="bg-white rounded-lg relative w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6 sm:p-8 ">
+
+      {/* Close Button */}
+      <button
+        onClick={() => setShowForm(false)}
+        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white"
+      >
+        ✕
+      </button>
+
+      {/* HubSpot Form */}
+      <div
+        className="hs-form-frame w-full"
+        data-region="na1"
+        data-form-id="37a433e7-0348-43a4-8d7f-9a1cbcb1a0eb"
+        data-portal-id="8237042"
+      ></div>
+
+    </div>
+
+  </div>
+)}
 </div>
+
 );
 }
 export default Hero;
