@@ -71,86 +71,86 @@ function Pattern() {
       </div>
 
 
-<style>{`
+      <style>{`
 
-/* DESKTOP MARQUEE */
+      /* DESKTOP MARQUEE */
 
-.marquee-track{
-  display:flex;
-  gap:20px;
-  animation: marquee-x 10s linear infinite;
-  will-change: transform;
-  width: max-content;
-}
+      .marquee-track{
+        display:flex;
+        gap:20px;
+        animation: marquee-x 10s linear infinite;
+        will-change: transform;
+        width: max-content;
+      }
 
-@keyframes marquee-x{
-  0%{
-    transform:translateX(0);
-  }
-  100%{
-    transform:translateX(-100%);
-  }
-}
+      @keyframes marquee-x{
+        0%{
+          transform:translateX(0);
+        }
+        100%{
+          transform:translateX(-100%);
+        }
+      }
 
-.marquee-track:hover{
-  animation-play-state:paused;
-}
+      .marquee-track:hover{
+        animation-play-state:paused;
+      }
 
 
-/* MOBILE CAROUSEL */
+      /* MOBILE CAROUSEL */
 
-.mobile-carousel{
-  display:none;
-}
+      .mobile-carousel{
+        display:none;
+      }
 
-@media (max-width:768px){
+      @media (max-width:768px){
 
-  .desktop-marquee{
-    display:none;
-  }
+        .desktop-marquee{
+          display:none;
+        }
 
-  .mobile-carousel{
-    display:flex;
-    overflow-x:auto;
-    gap:20px;
-    padding:20px;
-    scroll-snap-type:x mandatory;
+        .mobile-carousel{
+          display:flex;
+          overflow-x:auto;
+          gap:20px;
+          padding:20px;
+          scroll-snap-type:x mandatory;
 
-    scrollbar-width:none;
-    -ms-overflow-style:none;
-  }
+          scrollbar-width:none;
+          -ms-overflow-style:none;
+        }
 
-  .mobile-carousel::-webkit-scrollbar{
-    display:none;
-  }
+        .mobile-carousel::-webkit-scrollbar{
+          display:none;
+        }
 
-  .carousel-item{
-    flex:0 0 auto;
-    scroll-snap-align:center;
-    position:relative;
-  }
+        .carousel-item{
+          flex:0 0 auto;
+          scroll-snap-align:center;
+          position:relative;
+        }
 
-  .carousel-img{
-    height:320px;
-    width:240px;
-    object-fit:contain;
-  }
+        .carousel-img{
+          height:320px;
+          width:240px;
+          object-fit:contain;
+        }
 
-  .title{
-    position:absolute;
-    bottom:20px;
-    left:50%;
-    transform:translateX(-50%);
-    color:white;
-    font-weight:bold;
-    background:rgba(0,0,0,0.4);
-    padding:6px 12px;
-    border-radius:6px;
-  }
+        .title{
+          position:absolute;
+          bottom:20px;
+          left:50%;
+          transform:translateX(-50%);
+          color:white;
+          font-weight:bold;
+          background:rgba(0,0,0,0.4);
+          padding:6px 12px;
+          border-radius:6px;
+        }
 
-}
+      }
 
-`}</style>
+      `}</style>
 
     </div>
   );
