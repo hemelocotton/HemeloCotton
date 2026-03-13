@@ -98,9 +98,9 @@ function Connect() {
 
       {/* HUBSPOT POPUP */}
          {showForm && (
-  <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4">
+  <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4 ">
 
-    <div className="bg-white rounded-lg relative w-full sm:max-w-xl md:max-w-2xl max-h-[90vh] overflow-y-auto p-5 sm:p-8">
+    <div className="bg-white rounded-lg relative w-full sm:max-w-xl md:max-w-2xl max-h-[90vh] overflow-y-auto p-5 sm:p-8 overflow-y-hidden">
 
       {/* Close Button */}
       <button

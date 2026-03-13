@@ -513,7 +513,7 @@ export default function Customization (){
        </div>
       
       {/* Embroidery Card */}
-        <div className="relative">
+        <div className="relative pb-10">
 
        <div className="text-white text-[30px] font-bold text-start py-5 uppercase px-5 md:text-[70px] lg:text-[50px] sm:text-[70px]">
         <p>Embroidery Techniques</p>

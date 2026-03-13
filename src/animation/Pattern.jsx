@@ -19,7 +19,7 @@ function Pattern() {
   const loopItems = [...items, ...items, ...items];
 
   return (
-    <div className="relative">
+    <div className="relative bg-black">
 
       {/* ---------- DESKTOP MARQUEE ---------- */}
       <div className="desktop-marquee w-full overflow-hidden py-10">

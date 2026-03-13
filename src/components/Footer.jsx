@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <footer
       style={{
-        backgroundColor: "black/20",
+        backgroundColor: "black",
         fontFamily: FONT,
         padding: isMobile ? "40px 24px 24px" : "60px 80px 32px",
         boxSizing: "border-box",

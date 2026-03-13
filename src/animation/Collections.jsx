@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Collections = () => {
   return (
-    <div id='collections' className='pt-10 px-4 md:px-10'>
+    <div id='collections' className='pt-10 px-4 md:px-10 bg-black'>
         <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-8'>
             <p className=' text-white text-[20px] md:text-xl opacity-60'>2026 Summer <br/> Collections</p>
             <div className=' text-white font-bold text-[50px] md:text-6xl lg:text-[80px] leading-tight md:leading-[1.05] max-w-[18ch]'>
