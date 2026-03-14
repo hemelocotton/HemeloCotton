@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <footer
       style={{
-        backgroundColor: "black",
+        backgroundColor: "black/20",
         fontFamily: FONT,
         padding: isMobile ? "40px 24px 24px" : "60px 80px 32px",
         boxSizing: "border-box",
@@ -76,6 +76,14 @@ const Footer = () => {
             </ul>
           </div>
         ))}
+      </div>
+      <div className="flex  flex-col items-start justify-end gap-5 md:flex-row lg:flex-row sm:flex-col">
+      <div className="text-[16px] font-bold">
+        Email: <a href="mailto:info@hemelocotton.com" className="">hemelocotton@gmail.com</a>
+      </div>
+      <div className="text-[16px] font-bold">
+        Phone: <a href="tel:+1234567890" className="">+91 85080 80206</a>
+      </div>
       </div>
 
       {/* Divider */}

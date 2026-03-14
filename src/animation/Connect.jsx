@@ -112,7 +112,7 @@ function Connect() {
 
       {/* HubSpot Form */}
       <div
-        className="hs-form-frame w-full"
+        className="hs-form-frame max-w-xl mx-auto w-full min-h-[500px]"
         data-region="na2"
         data-form-id="a2dfc6ff-9c79-459c-9bcc-fdf12c54435b"
         data-portal-id="245488615"
