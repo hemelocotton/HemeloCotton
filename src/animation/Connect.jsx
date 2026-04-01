@@ -13,7 +13,7 @@ function Connect() {
     document.body.appendChild(script);
   }, []);
 
-  const images = ["/model2.png", "/model3.png", "/model4.png", "/model5.png"];
+  const images = ["/footer01.png", "/footer02.png", "/footer03.png", "/footer04.png", "/footer05.png"];
   const loopImages = [...images, ...images, ...images];
 
   return (
