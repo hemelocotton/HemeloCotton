@@ -12,73 +12,73 @@ const stories=[
     id:1,
     title:"Tailored Manufacturing for Your Brand",
     cont:"Unlike mass producers, we operate on a made-to-order basis, meaning no ready stocks sit on our shelves",
-    img:"/fabric01.jpg",
+    img:"/custom01.jpg",
   },
   {
     id:2,
     title:"Advanced Washing Techniques",
     cont:"As an innovative Tirupur T-shirt manufacturer, we offer a variety of advanced washing treatments to enhance your garments’ texture and appearance.",
-    img:"/fabric02.jpg",
+    img:"/custom02.jpg",
   },
   {
     id:3,
     title:"Diverse Printing Methods",
     cont:"Our printing services cater to every design need with an extensive array of methods, including direct printing, screen printing, and offset printing.",
-    img:"/fabric03.jpg",
+    img:"/custom03.jpg",
   },
   {
     id:4,
     title:"Elegant Embroidery Services",
     cont:"Add a touch of sophistication to your branded apparel with our expert embroidery services.",
-    img:"/fabric04.jpg",                                                                                            
+    img:"/custom04.jpg",                                                                                            
   },
   {
     id:5,
     title:"Custom Hang Tags",
     cont:"Hang tags serve as a powerful tool to convey your brand’s message and garment details.",
-    img:"/fabric05.jpg",
+    img:"/custom05.jpg",
   },
   {
     id:6,
     title:"Precision Pantone Color Matching",
     cont:"Achieving the perfect shade for your apparel is effortless with our Pantone color matching system.",
-    img:"/fabric06.jpg",
+    img:"/custom06.jpg",
   },
   {
     id:7,
     title:"Custom Twill Tape",
     cont:"Twill tape, often found in garment necklines and inside caps, reinforces seams while adding a refined finish.",
-    img:"/fabric07.jpg",
+    img:"/custom07.jpg",
   },
   {
     id:8,
     title:"Versatile Patch Labels",
     cont:"Patch labels provide a stylish and flexible way to showcase your brand. Our offerings include metal patches, silicon patches, leather patches, and embroidered patches, each applicable to various garment areas for a unique, high-end look.",
-    img:"/fabric08.jpg",
+    img:"/custom08.jpg",
   },
   {
     id:9,
     title:"Branded Buttons and Zippers",
     cont:"Elevate your garments with custom-branded buttons and zippers, available in metal, plastic, or custom-molded designs.",
-    img:"/fabric09.jpg",
+    img:"/custom09.jpg",
   },
   {
     id:10,
     title:"Custom Neck Labels",
     cont:"Neck labels offer an elegant, understated way to display your brand",
-    img:"/fabric10.jpg",
+    img:"/custom10.jpg",
   },
   {
     id:11,
     title:"Durable Wash Care Labels",
     cont:"Clear care instructions are vital for garment longevity, and our customizable wash care labels deliver just that. ",
-    img:"/fabric11.jpg",
+    img:"/custom11.jpg",
   },
   {
     id:12,
     title:"Branded Poly Packs and Paper Bags",
     cont:"Packaging is the final step in presenting your brand, and our customizable poly packs and paper bags are designed to impress.",
-    img:"/fabric12.jpg",
+    img:"/custom12.jpg",
   },
   {
     id:13,
@@ -302,7 +302,7 @@ export default function Customization (){
   return (
     <div className='bg-black '>
 
-      {/* HERO */}
+      {/* Customization */}
       <div className='flex items-center justify-center min-h-[100vh]'>
 
         <div className="flex flex-col lg:flex-row items-center justify-center px-4 md:px-10 pt-24 lg:pt-32 gap-8">
@@ -353,8 +353,8 @@ export default function Customization (){
             className="w-full flex justify-center"
           >
             <img
-              src="/hero.jpg"
-              alt="hero"
+              src="/Customization.jpg"
+              alt="Customization"
               className="w-full max-w-[380px] sm:max-w-[420px] md:max-w-[480px] lg:max-w-[550px] h-auto lg:h-[650px] object-cover rounded-xl"
             />
           </motion.div>

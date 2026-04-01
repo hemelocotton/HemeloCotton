@@ -267,7 +267,7 @@ export default function FabricFinish (){
   return (
     <div className='bg-black'>
 
-      {/* HERO */}
+      {/* FabricFinish */}
       <div className='flex items-center justify-center min-h-[100vh]'>
 
         <div className="flex flex-col lg:flex-row items-center justify-center px-4 md:px-10 pt-24 lg:pt-32 gap-8">
@@ -318,8 +318,8 @@ export default function FabricFinish (){
             className="w-full flex justify-center"
           >
             <img
-              src="/hero.jpg"
-              alt="hero"
+              src="/FabricFinish.jpg"
+              alt="FabricFinish"
               className="w-full max-w-[380px] sm:max-w-[420px] md:max-w-[480px] lg:max-w-[550px] h-auto lg:h-[650px] object-cover rounded-xl"
             />
           </motion.div>
