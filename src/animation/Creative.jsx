@@ -7,23 +7,23 @@ const services = [
   {
     id: "Knitting",
     label: "Knitting Structure",
-    image: "/print2.jpg",
+    image: "/knitting.jpg",
   },
   {
     id: "FabricFinishing",
     label: "Fabric Finishing",
-    image: "/print3.jpg",
+    image: "/FabricFinish.jpg",
   },
   {
     id: "Customization",
     label: "Customization",
-    image: "/print4.jpg",
+    image: "/Customization.jpg",
   },
 ];
 
 export default function Creative() {
  
- const defaultImage = "/visual.jpg";
+ const defaultImage = "/Customization.jpg";
   const [active, setActive] = useState("");
   const [activeImage, setActiveImage] = useState(defaultImage);
   const navigate = useNavigate();
