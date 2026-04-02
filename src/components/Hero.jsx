@@ -18,7 +18,7 @@ function Hero  (){
       }, []);
   return (
     <div className='bg-black'>
-      <div className='flex items-center justify-center h-[90vh]'>
+      <div className='flex items-center justify-center h-[100vh] '>
      <div className="flex flex-col lg:flex-row items-center justify-center bg-black px-4 md:px-10 pt-30 lg:pt-32 gap-10">
 
       {/* TEXT SECTION */}

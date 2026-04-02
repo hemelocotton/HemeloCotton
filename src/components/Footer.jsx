@@ -22,7 +22,7 @@ const Footer = () => {
   };
 
   return (
-    <footer
+    <footer id="footer"
       style={{
         backgroundColor: "black/20",
         fontFamily: FONT,
@@ -33,13 +33,14 @@ const Footer = () => {
       }}
     >
       {/* Columns */}
+      <div  className="flex flx-row items-center justify-between ">
       <div
         style={{
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
           gap: isMobile ? "40px" : "80px",
           marginBottom: "60px",
-        }}
+        }} className=""
       >
         {Object.entries(links).map(([category, items]) => (
           <div key={category} style={{ minWidth: "120px" }}>
@@ -76,6 +77,18 @@ const Footer = () => {
             </ul>
           </div>
         ))}
+      </div>
+  <div className="hidden lg:flex flex-col sm:flex-row gap-0 lg:gap-5 py-10 lg:py-20 items-center">
+  {["H","E","M","E","L","O","C","O","T","T","O","N"].map((letter, i) => (
+    <p
+      key={i}
+      className=" text-[50px] sm:text-[70px] lg:text-[90px] leading-tight "
+    >
+      {letter}
+    </p>
+  ))}
+</div>
+
       </div>
       <div className="flex  flex-col items-start justify-end gap-5 md:flex-row lg:flex-row sm:flex-col">
       <div className="text-[16px] font-bold">

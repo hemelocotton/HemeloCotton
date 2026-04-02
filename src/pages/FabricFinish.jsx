@@ -261,9 +261,15 @@ function Card({ story, index, total }) {
 
 export default function FabricFinish (){
 
-    useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+      const [showForm, setShowForm] = useState(false);
+  
+       useEffect(() => {
+          const script = document.createElement("script");
+          script.src = "https://js.hsforms.net/forms/embed/v2.js";
+          script.async = true;
+          document.body.appendChild(script);
+            window.scrollTo(0, 0);
+        }, []);
   return (
     <div className='bg-black'>
 
@@ -285,17 +291,17 @@ export default function FabricFinish (){
              Fabric Finishing Techniques for Premium Apparel
             </p>
 
-            <p className="text-white opacity-50 mt-4 text-[13px] sm:text-[15px] md:text-[16px] lg:text-[18px] uppercase leading-relaxed">
+            <p  className="text-white opacity-50 mt-4 text-[13px] sm:text-[15px] md:text-[16px] lg:text-[18px] uppercase leading-relaxed">
            At Hemelo Cotton Global, we specialize in advanced fabric finishing techniques that enhance the quality, comfort, and aesthetic appeal of textiles. Our processes are designed to meet the needs of custom T-shirt printing and apparel manufacturing, ensuring your brand’s products are durable, stylish, and tailored to perfection.
             </p>
 
             <div className="flex flex-wrap gap-4 mt-6">
 
-              <p className="bg-white text-black px-8 py-3 uppercase text-sm font-bold  cursor-pointer hover:bg-black hover:text-white transition-all duration-300">
+              <p onClick={() => setShowForm(true)}  className="bg-white text-black px-8 py-3 uppercase text-sm font-bold  cursor-pointer hover:bg-black hover:text-white transition-all duration-300">
                 Talk to Sales Expert
               </p>
 
-              <p className="bg-white text-black px-8 py-3 uppercase text-sm font-bold cursor-pointer hover:bg-black hover:text-white transition-all duration-300">  
+              <p onClick={() => setShowForm(true)}  className="bg-white text-black px-8 py-3 uppercase text-sm font-bold cursor-pointer hover:bg-black hover:text-white transition-all duration-300">  
                 Get Sample
               </p>
 
@@ -335,7 +341,31 @@ export default function FabricFinish (){
           <Card key={story.id} story={story} index={i} total={stories.length}/>
         ))}
       </div>
+       {showForm && (
+  <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4">
 
+    <div className="bg-white rounded-lg relative w-full sm:max-w-xl md:max-w-2xl max-h-[90vh] overflow-y-auto p-5 sm:p-8 overflow-y-hidden">
+
+      {/* Close Button */}
+      <button
+        onClick={() => setShowForm(false)}
+        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white bg-black"
+      >
+        ✕
+      </button>
+
+      {/* HubSpot Form */}
+      <div
+        className="hs-form-frame max-w-xl mx-auto w-full min-h-[500px]"
+        data-region="na2"
+        data-form-id="a2dfc6ff-9c79-459c-9bcc-fdf12c54435b"
+        data-portal-id="245488615"
+      ></div>
+
+    </div>
+
+  </div>
+)}
     </div>
   )
 }
