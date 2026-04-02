@@ -18,7 +18,7 @@ const Footer = () => {
   const links = {
     Links: ["Home", "Projects"],
     Fabrics: ["Cotton", "Linen", "Polyester", "Ribbon"],
-    "Social Media": ["Facebook", "Instagram", "LinkedIn", "Twitter"],
+    "Social Media": ["Facebook", "", "LinkedIn", "X", "YouTube"],
   };
 
   return (
@@ -79,7 +79,7 @@ const Footer = () => {
         ))}
       </div>
   <div className="hidden lg:flex flex-col sm:flex-row gap-0 lg:gap-5 py-10 lg:py-20 items-center">
-  {["H","E","M","E","L","O","C","O","T","T","O","N"].map((letter, i) => (
+  {["H","E","M","E","L","O"," ","C","O","T","T","O","N"].map((letter, i) => (
     <p
       key={i}
       className=" text-[50px] sm:text-[70px] lg:text-[90px] leading-tight "
