@@ -32,45 +32,24 @@ const Footer = () => {
         opacity: 0.8,
       }}
     >
-      {/* Columns */}
-      <div className="flex flex-col lg:flex-row items-start  justify-around">
+     <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center w-full">
 
   {/* Links Section */}
   <div
-    style={{
-      display: "flex",
-      flexDirection: isMobile ? "column" : "row",
-      gap: isMobile ? "40px" : "80px",
-      marginBottom: "60px",
-    }}
+    className="flex flex-col lg:flex-row gap-10 lg:gap-20 mb-10 lg:mb-0"
   >
     {Object.entries(links).map(([category, items]) => (
-      <div key={category} style={{ minWidth: "120px" }}>
-        <h3
-          style={{
-            fontWeight: "800",
-            fontSize: isMobile ? "18px" : "22px",
-            color: "white",
-            marginBottom: "20px",
-            marginTop: 0,
-          }}
-        >
+      <div key={category} className="min-w-[120px]">
+        <h3 className="font-extrabold text-[18px] lg:text-[22px] text-white mb-5">
           {category}
         </h3>
 
-        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+        <ul className="list-none p-0 m-0">
           {items.map((item) => (
-            <li key={item} style={{ marginBottom: "10px" }}>
+            <li key={item} className="mb-2.5">
               <a
                 href="#"
-                style={{
-                  fontSize: isMobile ? "14px" : "14.5px",
-                  color: "white",
-                  textDecoration: "none",
-                  transition: "opacity 0.2s",
-                }}
-                onMouseEnter={(e) => (e.target.style.opacity = "0.5")}
-                onMouseLeave={(e) => (e.target.style.opacity = "1")}
+                className="!text-white/50 text-sm lg:text-[14.5px] transition-opacity duration-200 hover:opacity-50"
               >
                 {item}
               </a>
@@ -78,29 +57,17 @@ const Footer = () => {
           ))}
         </ul>
       </div>
-
     ))}
   </div>
-</div>
+
   {/* Logo Section */}
-  <div className="relative flex justify-center lg:justify-end w-full lg:w-auto  lg:mt-0">
-  <img
-    src="Hemelo Cotton Logo.png"
-    alt=""
-    className="h-28 lg:h-40 w-auto object-contain opacity-50"
-  />
-
-  <div className="hidden lg:flex flex-col sm:flex-row gap-0 lg:gap-5 py-10 lg:py-20 items-center">
-  {["H","E","M","E","L","O"," ","C","O","T","T","O","N"].map((letter, i) => (
-    <p
-      key={i}
-      className=" text-[50px] sm:text-[70px] lg:text-[90px] leading-tight "
-    >
-      {letter}
-    </p>
-  ))}
-
-</div>
+  <div className="flex justify-center lg:justify-end w-full lg:w-auto">
+    <img
+      src="Hemelo Cotton Logo.png"
+      alt="logo"
+      className="h-28 lg:h-40 w-auto object-contain opacity-50"
+    />
+  </div>
 
 </div>
       <div className="flex  flex-col items-start justify-end gap-5 md:flex-row lg:flex-row sm:flex-col mt-5">
