@@ -25,16 +25,22 @@ const Collections = () => {
                 className="rounded-2xl w-full h-auto "
             />
 
-            <div className="absolute inset-0 flex items-end justify-center 
-                            bg-black/40 rounded-2xl px-4
-                            opacity-0 translate-y-5
-                            group-hover:opacity-100 group-hover:translate-y-0
-                            transition-all duration-300 ease-in-out">
-
-                <p className="text-white font-bold pb-6 text-md md:text-xl lg:text-[30px] text-center">
-              White Label T-Shirt for Global Retail Brands
-                </p>
-
+            <div
+              className="
+                absolute inset-0 flex items-end justify-center 
+                bg-black/40 rounded-2xl px-4
+                
+                opacity-100 translate-y-0   /* Mobile: always visible */
+                
+                md:opacity-0 md:translate-y-5 
+                md:group-hover:opacity-100 md:group-hover:translate-y-0  /* Desktop hover */
+                
+                transition-all duration-300 ease-in-out
+              "
+            >
+              <p className="text-white font-bold pb-6 text-[30px] md:text-xl lg:text-[30px] text-center">
+                White Label T-Shirt for Global Retail Brands
+              </p>
             </div>
             </motion.div>
             </div>
@@ -51,16 +57,22 @@ const Collections = () => {
                 className="rounded-2xl w-full h-auto"
             />
 
-            <div className="absolute inset-0 flex items-end justify-center 
-                            bg-black/40 rounded-2xl px-4
-                            opacity-0 translate-y-5
-                            group-hover:opacity-100 group-hover:translate-y-0
-                            transition-all duration-300 ease-in-out">
-
-                <p className="text-white font-bold pb-6 text-2xl md:text-3xl lg:text-[30px] text-center">
-              Corporate T-Shirts for MNCs and Events
-                </p>
-
+          <div
+              className="
+                absolute inset-0 flex items-end justify-center 
+                bg-black/40 rounded-2xl px-4
+                
+                opacity-100 translate-y-0   /* Mobile: always visible */
+                
+                md:opacity-0 md:translate-y-5 
+                md:group-hover:opacity-100 md:group-hover:translate-y-0  /* Desktop hover */
+                
+                transition-all duration-300 ease-in-out
+              "
+            >
+              <p className="text-white font-bold pb-6 text-[30px] md:text-xl lg:text-[30px] text-center">
+                Corporate T-Shirts for MNCs and Events
+              </p>
             </div>
             </motion.div>
             </div>
@@ -77,17 +89,24 @@ const Collections = () => {
                 className="rounded-2xl w-full h-auto"
             />
 
-            <div className="absolute inset-0 flex items-end justify-center 
-                            bg-black/40 rounded-2xl px-4
-                            opacity-0 translate-y-5
-                            group-hover:opacity-100 group-hover:translate-y-0
-                            transition-all duration-300 ease-in-out">
-
-                <p className="text-white font-bold pb-6 text-md md:text-xl lg:text-[30px] text-center">
-               Bulk Institutional Clothing Supplier for Schools and Colleges
-                </p>
-
+          <div
+              className="
+                absolute inset-0 flex items-end justify-center 
+                bg-black/40 rounded-2xl px-4
+                
+                opacity-100 translate-y-0   /* Mobile: always visible */
+                
+                md:opacity-0 md:translate-y-5 
+                md:group-hover:opacity-100 md:group-hover:translate-y-0  /* Desktop hover */
+                
+                transition-all duration-300 ease-in-out
+              "
+            >
+              <p className="text-white font-bold pb-6 text-[30px] md:text-xl lg:text-[30px] text-center">
+                 Bulk Institutional Clothing Supplier for Schools and Colleges
+              </p>
             </div>
+            
             </motion.div>
             </div>
             <div className="relative group w-full">
@@ -96,24 +115,30 @@ const Collections = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1.6}}   
-            >       
+            >        
             <img
                 src="/startups.jpg"
                 alt=""
                 className="rounded-2xl w-full h-auto object-fit-cover"
             />
-
-            <div className="absolute inset-0 flex items-end justify-center 
-                            bg-black/40 rounded-2xl px-4
-                            opacity-0 translate-y-5
-                            group-hover:opacity-100 group-hover:translate-y-0
-                            transition-all duration-300 ease-in-out">
-
-                <p className="text-white font-bold pb-6 text-md md:text-xl lg:text-[30px] text-center">
-               T-Shirts for Lifestyle & Startup Brands
-                </p>
-
+             <div
+              className="
+                absolute inset-0 flex items-end justify-center 
+                bg-black/40 rounded-2xl px-4
+                
+                opacity-100 translate-y-0   /* Mobile: always visible */
+                
+                md:opacity-0 md:translate-y-5 
+                md:group-hover:opacity-100 md:group-hover:translate-y-0  /* Desktop hover */
+                
+                transition-all duration-300 ease-in-out
+              "
+            >
+              <p className="text-white font-bold pb-6 text-[30px] md:text-xl lg:text-[30px] text-center">
+                T-Shirts for Lifestyle & Startup Brands
+              </p>
             </div>
+         
             </motion.div>
            </div>
         </div>

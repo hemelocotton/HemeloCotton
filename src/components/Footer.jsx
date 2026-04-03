@@ -33,64 +33,65 @@ const Footer = () => {
       }}
     >
       {/* Columns */}
-      <div  className="flex flx-row items-center justify-between ">
-      <div
-        style={{
-          display: "flex",
-          flexDirection: isMobile ? "column" : "row",
-          gap: isMobile ? "40px" : "80px",
-          marginBottom: "60px",
-        }} className=""
-      >
-        {Object.entries(links).map(([category, items]) => (
-          <div key={category} style={{ minWidth: "120px" }}>
-            <h3
-              style={{
-                fontWeight: "800",
-                fontSize: isMobile ? "18px" : "22px",
-                color: "white",
-                marginBottom: "20px",
-                marginTop: 0,
-              }}
-            >
-              {category}
-            </h3>
+      <div className="flex flex-col lg:flex-row items-start  justify-around">
 
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {items.map((item) => (
-                <li key={item} style={{ marginBottom: "10px" }}>
-                  <a
-                    href="#"
-                    style={{
-                      fontSize: isMobile ? "14px" : "14.5px",
-                      color: "white",
-                      textDecoration: "none",
-                      transition: "opacity 0.2s",
-                    }}
-                    onMouseEnter={(e) => (e.target.style.opacity = "0.5")}
-                    onMouseLeave={(e) => (e.target.style.opacity = "1")}
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+  {/* Links Section */}
+  <div
+    style={{
+      display: "flex",
+      flexDirection: isMobile ? "column" : "row",
+      gap: isMobile ? "40px" : "80px",
+      marginBottom: "60px",
+    }}
+  >
+    {Object.entries(links).map(([category, items]) => (
+      <div key={category} style={{ minWidth: "120px" }}>
+        <h3
+          style={{
+            fontWeight: "800",
+            fontSize: isMobile ? "18px" : "22px",
+            color: "white",
+            marginBottom: "20px",
+            marginTop: 0,
+          }}
+        >
+          {category}
+        </h3>
+
+        <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+          {items.map((item) => (
+            <li key={item} style={{ marginBottom: "10px" }}>
+              <a
+                href="#"
+                style={{
+                  fontSize: isMobile ? "14px" : "14.5px",
+                  color: "white",
+                  textDecoration: "none",
+                  transition: "opacity 0.2s",
+                }}
+                onMouseEnter={(e) => (e.target.style.opacity = "0.5")}
+                onMouseLeave={(e) => (e.target.style.opacity = "1")}
+              >
+                {item}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-  <div className="hidden lg:flex flex-col sm:flex-row gap-0 lg:gap-5 py-10 lg:py-20 items-center">
-  {["H","E","M","E","L","O","C","O","T","T","O","N"].map((letter, i) => (
-    <p
-      key={i}
-      className=" text-[50px] sm:text-[70px] lg:text-[90px] leading-tight "
-    >
-      {letter}
-    </p>
-  ))}
+    ))}
+  </div>
+
+  {/* Logo Section */}
+  <div className="relative flex justify-center lg:justify-end w-full lg:w-auto  lg:mt-0">
+  <img
+    src="Hemelo Cotton Logo.png"
+    alt=""
+    className="h-28 lg:h-40 w-auto object-contain opacity-50"
+  />
 </div>
 
-      </div>
-      <div className="flex  flex-col items-start justify-end gap-5 md:flex-row lg:flex-row sm:flex-col">
+</div>
+      <div className="flex  flex-col items-start justify-end gap-5 md:flex-row lg:flex-row sm:flex-col mt-5">
       <div className="text-[16px] font-bold">
         Email: <a href="mailto:info@hemelocotton.com" className="">hemelocotton@gmail.com</a>
       </div>
