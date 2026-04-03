@@ -18,7 +18,7 @@ const Footer = () => {
   const links = {
     Links: ["Home", "Projects"],
     Fabrics: ["Cotton", "Linen", "Polyester", "Ribbon"],
-    "Social Media": ["Facebook", "Instagram", "LinkedIn", "Twitter"],
+    "Social Media": ["Facebook", "", "LinkedIn", "X", "YouTube"],
   };
 
   return (
@@ -78,9 +78,10 @@ const Footer = () => {
           ))}
         </ul>
       </div>
+
     ))}
   </div>
-
+</div>
   {/* Logo Section */}
   <div className="relative flex justify-center lg:justify-end w-full lg:w-auto  lg:mt-0">
   <img
@@ -88,6 +89,17 @@ const Footer = () => {
     alt=""
     className="h-28 lg:h-40 w-auto object-contain opacity-50"
   />
+
+  <div className="hidden lg:flex flex-col sm:flex-row gap-0 lg:gap-5 py-10 lg:py-20 items-center">
+  {["H","E","M","E","L","O"," ","C","O","T","T","O","N"].map((letter, i) => (
+    <p
+      key={i}
+      className=" text-[50px] sm:text-[70px] lg:text-[90px] leading-tight "
+    >
+      {letter}
+    </p>
+  ))}
+
 </div>
 
 </div>
