@@ -387,7 +387,7 @@ export default function Customization (){
 
       {/* ---------- DESKTOP MARQUEE ---------- */}
       <div className="desktop-marquee w-full overflow-hidden py-2">
-        <div className="marquee-track"  style={{ animationDuration: "70s" }}>
+        <div className="marquee-track"  style={{ animationDuration: "100s" }}>
 
           {loopItems1.map((item, i) => (
             <div key={i} className="relative flex-shrink-0">
@@ -529,42 +529,42 @@ export default function Customization (){
 
   <div className="group relative">
     <img src="/e1.jpg" alt="" className="w-full h-[250px] sm:h-[320px] lg:h-[400px] object-cover rounded-lg"/>
-    <div className="absolute  bottom-6 left-1/2 -translate-x-1/2 text-white text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+    <div className="absolute  bottom-6 left-1/2 -translate-x-1/2 text-black text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
       Satin Embroidery
     </div>
   </div>
 
   <div className="group relative">
     <img src="/e2.jpg" alt="" className="w-full h-[250px] sm:h-[320px] lg:h-[400px] object-cover rounded-lg"/>
-    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-black text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
       Coloreel Embroidery
     </div>
   </div>
 
   <div className="group relative">
     <img src="/e3.jpg" alt="" className="w-full h-[250px] sm:h-[320px] lg:h-[400px] object-cover rounded-lg"/>
-    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-black text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
       Embossed Embroidery
     </div>
   </div>
 
   <div className="group relative">
     <img src="/e4.jpg" alt="" className="w-full h-[250px] sm:h-[320px] lg:h-[400px] object-cover rounded-lg"/>
-    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-black text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
       Felt Embroidery
     </div>
   </div>
 
   <div className="group relative">
     <img src="/e5.jpg" alt="" className="w-full h-[250px] sm:h-[320px] lg:h-[400px] object-cover rounded-lg"/>
-    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-black text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
       Chenille Embroidery
     </div>
   </div>
 
   <div className="group relative">
     <img src="/e6.jpg" alt="" className="w-full h-[250px] sm:h-[320px] lg:h-[400px] object-cover rounded-lg"/>
-    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-black text-[24px] sm:text-[32px] lg:text-[40px] font-extrabold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
       Sequin Embroidery
     </div>
   </div>
@@ -711,7 +711,7 @@ export default function Customization (){
       {/* Close Button */}
       <button
         onClick={() => setShowForm(false)}
-        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white bg-black"
+        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white/50 bg-black text-white"
       >
         ✕
       </button>

@@ -349,7 +349,7 @@ export default function FabricFinish (){
       {/* Close Button */}
       <button
         onClick={() => setShowForm(false)}
-        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white bg-black"
+        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white/50 bg-black text-white"
       >
         ✕
       </button>

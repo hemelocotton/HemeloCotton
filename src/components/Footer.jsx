@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Textscroll from "../animation/Textscroll";
+import Footerscroll from "../animation/Footerscroll";
 
 const FONT = "sans-serif";
 
@@ -32,8 +34,11 @@ const Footer = () => {
         opacity: 0.8,
       }}
     >
-     <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center w-full">
-
+      <div>
+    <Footerscroll/>
+  </div>
+  <div className="flex flex-col lg:flex-row justify-between  items-start lg:items-center w-full">
+  
   {/* Links Section */}
   <div
     className="flex flex-col lg:flex-row gap-10 lg:gap-20 mb-10 lg:mb-0"
@@ -49,7 +54,7 @@ const Footer = () => {
             <li key={item} className="mb-2.5">
               <a
                 href="#"
-                className="!text-white/50 text-sm lg:text-[14.5px] transition-opacity duration-200 hover:opacity-50"
+                className="!text-white/70 text-sm lg:text-[14.5px] transition-opacity duration-200 hover:opacity-50"
               >
                 {item}
               </a>

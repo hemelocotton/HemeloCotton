@@ -1,6 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 
 function Pattern() {
+
+  const scrollRef = useRef(null);
+
+  const handleMouseDown = (e) => {
+    const slider = scrollRef.current;
+    slider.isDown = true;
+    slider.startX = e.pageX - slider.offsetLeft;
+    slider.scrollLeftStart = slider.scrollLeft;
+  };
+
+  const handleMouseLeave = () => {
+    scrollRef.current.isDown = false;
+  };
+
+  const handleMouseUp = () => {
+    scrollRef.current.isDown = false;
+  };
+
+  const handleMouseMove = (e) => {
+    const slider = scrollRef.current;
+    if (!slider.isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - slider.startX) * 2;
+    slider.scrollLeft = slider.scrollLeftStart - walk;
+  };
 
   const items = [
     { img: "/Hoodie.jpg", name: "Hoodie" },
@@ -13,7 +39,6 @@ function Pattern() {
     { img: "/Track Pants.jpg", name: "Track Pants" },
     { img: "/Co Ord Sets for Women.jpg", name: "Women Wear" },
     { img: "/T-Shirts.jpg", name: "T-Shirts" },
-    
   ];
 
   const loopItems = [...items, ...items, ...items];
@@ -22,8 +47,15 @@ function Pattern() {
     <div className="relative bg-black">
 
       {/* ---------- DESKTOP MARQUEE ---------- */}
-      <div className="desktop-marquee w-full overflow-hidden py-10">
-        <div className="marquee-track"  style={{ animationDuration: "10s" }}>
+      <div
+        ref={scrollRef}
+        className="desktop-marquee w-full overflow-x-auto py-10 cursor-grab"
+        onMouseDown={handleMouseDown}
+        onMouseLeave={handleMouseLeave}
+        onMouseUp={handleMouseUp}
+        onMouseMove={handleMouseMove}
+      >
+        <div className="marquee-track" style={{ animationDuration: "20s" }}>
 
           {loopItems.map((item, i) => (
             <div key={i} className="relative flex-shrink-0">
@@ -33,7 +65,7 @@ function Pattern() {
                 alt={item.name}
                 style={{
                   height: "clamp(250px, 40vh, 500px)",
-                 width: "300px",
+                  width: "300px",
                   objectFit: "contain"
                 }}
               />
@@ -48,8 +80,7 @@ function Pattern() {
         </div>
       </div>
 
-
-      {/* ---------- MOBILE SCROLL CAROUSEL ---------- */}
+      {/* ---------- MOBILE CAROUSEL ---------- */}
       <div className="mobile-carousel">
 
         {items.map((item, i) => (
@@ -70,15 +101,22 @@ function Pattern() {
 
       </div>
 
-
       <style>{`
 
       /* DESKTOP MARQUEE */
 
+      .desktop-marquee::-webkit-scrollbar {
+        display: none;
+      }
+
+      .desktop-marquee {
+        scrollbar-width: none;
+      }
+
       .marquee-track{
         display:flex;
         gap:20px;
-        animation: marquee-x 10s linear infinite;
+        animation: marquee-x 20s linear infinite;
         will-change: transform;
         width: max-content;
       }
@@ -95,7 +133,6 @@ function Pattern() {
       .marquee-track:hover{
         animation-play-state:paused;
       }
-
 
       /* MOBILE CAROUSEL */
 

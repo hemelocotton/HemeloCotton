@@ -19,7 +19,7 @@ function Hero  (){
   return (
     <div className='bg-black'>
       <div className='flex items-center justify-center h-[100vh] '>
-     <div className="flex flex-col lg:flex-row items-center justify-center bg-black px-4 md:px-10 pt-30 lg:pt-32 gap-10">
+     <div className="flex flex-col lg:flex-row items-center justify-center bg-black px-4 md:px-10 pt-40 lg:pt-32 gap-10">
 
       {/* TEXT SECTION */}
       <motion.div
@@ -176,7 +176,7 @@ function Hero  (){
       {/* Close Button */}
       <button
         onClick={() => setShowForm(false)}
-        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white bg-black"
+        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white/50 bg-black text-white"
       >
         ✕
       </button>

@@ -130,14 +130,15 @@ function Navbar() {
 function MobileMenu({ onNavigate, isHomePage }) {
   const [open, setOpen] = useState(false);
 
-  const btnClass =
-    "text-left opacity-60 hover:opacity-100 uppercase";
+   const btnClass =
+    "text-left opacity-60 hover:opacity-100 uppercase text-black dark:text-white";
 
   return (
-    <div className="md:hidden">
+   <div className="md:hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="p-2 rounded-md border border-gray-800 text-white"
+        className="p-2 rounded-md border border-gray-800 
+                   text-black dark:text-white"
       >
         {open ? "✕" : "☰"}
       </button>
@@ -148,9 +149,12 @@ function MobileMenu({ onNavigate, isHomePage }) {
         transition={{ duration: 0.2 }}
         className={`${
           open ? "pointer-events-auto" : "pointer-events-none"
-        } fixed top-16 left-0 w-screen bg-black/90 backdrop-blur-md`}
+        } fixed top-16 left-0 w-screen 
+          bg-white/90 dark:bg-black/90 
+          backdrop-blur-md`}
       >
-        <div className="flex flex-col gap-4 px-6 py-6 text-white text-[12px]">
+        <div className="flex flex-col gap-4 px-6 py-6 
+                        text-[12px] text-black dark:text-white">
 
           {isHomePage ? (
             <>
@@ -205,16 +209,6 @@ function MobileMenu({ onNavigate, isHomePage }) {
               >
                 Home
               </button>
-
-              {/* <button
-                className={btnClass}
-                onClick={() => {
-                  onNavigate("contact");
-                  setOpen(false);
-                }}
-              >
-                Contact
-              </button> */}
             </>
           )}
 
