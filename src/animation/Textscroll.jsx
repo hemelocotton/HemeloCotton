@@ -14,7 +14,7 @@ const Textscroll = () => {
         <span>Cotton</span>
         <span>Global</span>
 
-         <span>Hemelo</span>
+        <span>Hemelo</span>
         <span>Cotton</span>
         <span>Global</span>
         <span>Hemelo</span>

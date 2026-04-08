@@ -36,7 +36,7 @@ const Footer = () => {
       <div className="">
     <Footerscroll/>
   </div>
-  <div className="flex flex-col lg:flex-row justify-between  items-start lg:items-center w-full ">
+  <div className="flex flex-col lg:flex-row justify-between  items-start lg:items-center w-full mt-10">
   
   {/* Links Section */}
   <div
