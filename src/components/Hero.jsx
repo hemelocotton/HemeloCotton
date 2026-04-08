@@ -76,7 +76,7 @@ function Hero  (){
      </div>
      </div>
 
-<div className="pt-20 sm:pt-20 md:pt-50 lg:pt-20">
+<div className="pt-30 sm:pt-50 md:pt-60 lg:pt-10">
   <TextScroll />
 </div>
   <div className=" px-4 md:px-10 md:ml-10">
