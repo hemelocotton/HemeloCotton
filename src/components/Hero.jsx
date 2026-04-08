@@ -14,7 +14,7 @@ function Hero  (){
   return (
     <div className='bg-black'>
       <div className='flex items-center justify-center h-[100vh] '>
-     <div className="flex flex-col lg:flex-row items-center justify-center bg-black px-4 md:px-10 pt-40 md:pt-70 lg:pt-32 gap-10">
+     <div className="flex flex-col lg:flex-row items-center justify-center bg-black px-4 md:px-10 pt-60 sm:pt-80 md:pt-100 lg:pt-32 gap-10">
 
       {/* TEXT SECTION */}
       <motion.div
@@ -76,7 +76,7 @@ function Hero  (){
      </div>
      </div>
 
-<div className="pt-20 sm:pt-16 md:pt-40 lg:pt-18">
+<div className="pt-20 sm:pt-20 md:pt-50 lg:pt-20">
   <TextScroll />
 </div>
   <div className=" px-4 md:px-10 md:ml-10">
