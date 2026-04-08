@@ -2,23 +2,28 @@ import React from "react";
 
 const Footerscroll = () => {
   return (
-    <div className="overflow-hidden w-full ">
+    <div className="w-full overflow-hidden px-4 ">
       
-  <div className="flex items-center whitespace-nowrap font-bold uppercase
-  text-[90px] sm:text-[120px] md:text-[140px] lg:text-[200px]
-  gap-4 sm:gap-8 md:gap-10 lg:gap-30   text-white">
+      <div
+        className="
+        flex justify-center items-center
+        whitespace-nowrap uppercase font-serif text-white
+        
+        text-[clamp(30px,6vw,160px)]
+        tracking-[0.12em]
+        
+        w-full
+        opacity-100
+        "
+      >
+        {"HEMELO COTTON".split("").map((char, index) => (
+          <span key={index} className="inline-block">
+            {char === " " ? "\u00A0" : char}
+          </span>
+        ))}
+      </div>
 
-    <span>H</span>
-    <span>E</span>
-    <span>M</span>
-    <span>E</span>
-    <span>L</span>
-    <span>O</span>
-    
-    
-  </div>
-
-</div>
+    </div>
   );
 };
 

@@ -27,7 +27,7 @@ const Footer = () => {
     <footer id="footer"
       style={{
         backgroundColor: "black/20",
-        padding: isMobile ? "40px 24px 24px" : "60px 80px 32px",
+        padding: isMobile ? "40px 24px 24px" : "60px 30px 32px",
         boxSizing: "border-box",
         width: "100%",
         opacity: 0.8,
@@ -36,7 +36,7 @@ const Footer = () => {
       <div className="">
     <Footerscroll/>
   </div>
-  <div className="flex flex-col lg:flex-row justify-between  items-start lg:items-center w-full">
+  <div className="flex flex-col lg:flex-row justify-between  items-start lg:items-center w-full ">
   
   {/* Links Section */}
   <div
@@ -67,9 +67,9 @@ const Footer = () => {
   {/* Logo Section */}
   <div className="flex justify-center lg:justify-end w-full lg:w-auto">
     <img
-      src="Hemelo Cotton Logo.png"
+      src="logo.png"
       alt="logo"
-      className="h-15 lg:h-20 w-auto object-contain opacity-50"
+      className="h-30 lg:h-30 w-auto object-contain opacity-50"
     />
   </div>
 
