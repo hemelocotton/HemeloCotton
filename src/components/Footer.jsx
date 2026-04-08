@@ -27,14 +27,13 @@ const Footer = () => {
     <footer id="footer"
       style={{
         backgroundColor: "black/20",
-        fontFamily: FONT,
         padding: isMobile ? "40px 24px 24px" : "60px 80px 32px",
         boxSizing: "border-box",
         width: "100%",
         opacity: 0.8,
       }}
     >
-      <div>
+      <div className="">
     <Footerscroll/>
   </div>
   <div className="flex flex-col lg:flex-row justify-between  items-start lg:items-center w-full">
@@ -54,7 +53,7 @@ const Footer = () => {
             <li key={item} className="mb-2.5">
               <a
                 href="#"
-                className="!text-white/70 text-sm lg:text-[14.5px] transition-opacity duration-200 hover:opacity-50"
+                className="!text-white/60 text-sm lg:text-[14.5px] transition-opacity duration-200 hover:opacity-50"
               >
                 {item}
               </a>
@@ -70,7 +69,7 @@ const Footer = () => {
     <img
       src="Hemelo Cotton Logo.png"
       alt="logo"
-      className="h-28 lg:h-40 w-auto object-contain opacity-50"
+      className="h-15 lg:h-20 w-auto object-contain opacity-50"
     />
   </div>
 

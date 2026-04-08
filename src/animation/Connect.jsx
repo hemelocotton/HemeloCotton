@@ -1,17 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Connect() {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [showForm, setShowForm] = useState(false);
+ 
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://js.hsforms.net/forms/embed/v2.js";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
+
+  const navigate = useNavigate();
 
   const images = ["/footer01.png", "/footer02.png", "/footer03.png", "/footer04.png", "/footer05.png"];
   const loopImages = [...images, ...images, ...images];
@@ -64,7 +59,7 @@ function Connect() {
 
             <div>
               <p
-                onClick={() => setShowForm(true)}
+               onClick={() => navigate("/contact")}
                 className="bg-white text-black hover:text-white hover:bg-white/50 
                 px-8 py-3 uppercase text-sm font-bold
                 transition-all duration-300 border-none cursor-pointer"
@@ -97,32 +92,7 @@ function Connect() {
       </div>
 
       {/* HUBSPOT POPUP */}
-         {showForm && (
-  <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4 ">
-
-    <div className="bg-white rounded-lg relative w-full sm:max-w-xl md:max-w-2xl max-h-[80vh] overflow-y-auto">
-
-      {/* Close Button */}
-      <button
-        onClick={() => setShowForm(false)}
-        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white/50 bg-black text-white"
-      >
-        ✕
-      </button>
-
-      {/* HubSpot Form */}
-      <div
-        className="hs-form-frame max-w-xl mx-auto w-full min-h-[500px]"
-        data-region="na2"
-        data-form-id="a2dfc6ff-9c79-459c-9bcc-fdf12c54435b"
-        data-portal-id="245488615"
-      ></div>
-
-    </div>
-
-  </div>
-)}
-
+       
       <style>{`
         .marquee-track {
           display: flex;

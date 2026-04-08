@@ -5,6 +5,8 @@ import { useRef, useEffect, useState } from "react";
 import Textscroll from "../animation/Textscroll";
 import Button from "../animation/Button";
 
+import { useNavigate } from "react-router-dom";
+
 
 
 const stories=[
@@ -108,7 +110,8 @@ const items1 = [
     
   ];
 
-  const loopItems1 = [...items1, ...items1, ...items1, ...items1, ...items1];
+const loopItems1 = [...items1, ...items1, ...items1, ...items1, ...items1];
+
 
 //   const items2 = [
 //     { img: "/e1.jpg", name: "Non-PVC Embroidery" },
@@ -156,6 +159,7 @@ function Card({ story, index, total }) {
   const scale = 1 - (progress * 0.06);
   const opacity = progress > 0.85 ? 1 - ((progress - 0.85) / 0.15) : 1;
   const imgY = progress * 80;
+
 
   return (
     <div
@@ -295,16 +299,17 @@ function Card({ story, index, total }) {
 }
 
 export default function Customization (){
+  
 
-   const [showForm, setShowForm] = useState(false);
+  
+    const navigate = useNavigate();
   
        useEffect(() => {
-          const script = document.createElement("script");
-          script.src = "https://js.hsforms.net/forms/embed/v2.js";
-          script.async = true;
-          document.body.appendChild(script);
-            window.scrollTo(0, 0);
-        }, []);
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}, []);
   return (
     <div className='bg-black '>
 
@@ -332,11 +337,14 @@ export default function Customization (){
 
             <div className="flex flex-wrap gap-4 mt-6">
 
-              <p onClick={() => setShowForm(true)} className="bg-white text-black px-8 py-3 uppercase text-sm font-bold  cursor-pointer hover:bg-black hover:text-white transition-all duration-300">
+             <p
+                onClick={() => navigate("/contact")}
+                className="bg-white text-black px-8 py-3 uppercase text-sm font-bold cursor-pointer hover:bg-black hover:text-white transition-all duration-300"
+              >
                 Talk to Manufacturing Expert
               </p>
 
-              <p onClick={() => setShowForm(true)} className="bg-white text-black px-8 py-3 uppercase text-sm font-bold cursor-pointer hover:bg-black hover:text-white transition-all duration-300">  
+              <p onClick={() => navigate("/contact")} className="bg-white text-black px-8 py-3 uppercase text-sm font-bold cursor-pointer hover:bg-black hover:text-white transition-all duration-300">  
                 Get Sample
               </p>
 
@@ -703,31 +711,7 @@ export default function Customization (){
       `}</style>
 
        </div>
-  {showForm && (
-  <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4">
 
-    <div className="bg-white rounded-lg relative w-full sm:max-w-xl md:max-w-2xl max-h-[80vh] overflow-y-auto ">
-
-      {/* Close Button */}
-      <button
-        onClick={() => setShowForm(false)}
-        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white/50 bg-black text-white"
-      >
-        ✕
-      </button>
-
-      {/* HubSpot Form */}
-      <div
-        className="hs-form-frame max-w-xl mx-auto w-full min-h-[500px]"
-        data-region="na2"
-        data-form-id="a2dfc6ff-9c79-459c-9bcc-fdf12c54435b"
-        data-portal-id="245488615"
-      ></div>
-
-    </div>
-
-  </div>
-)}
 
 
     </div>

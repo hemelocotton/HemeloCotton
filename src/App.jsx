@@ -15,6 +15,7 @@ import Connect from './animation/Connect'
 import Knitting from './pages/Knitting'
 import FabricFinish from './pages/FabricFinish'
 import Customization from './pages/Customization'
+import Contact from "./pages/Contact";
 
 
 
@@ -76,6 +77,7 @@ function App() {
         <Route path="/knitting" element={<Knitting />} />
         <Route path="/fabricfinish" element={<FabricFinish />} />
         <Route path="/customization" element={<Customization />} />
+        <Route path="/contact" element={<Contact />} />
         {/* <Route path="/highqualitybamboocotton" element={<HighQualityBambooCotton />} />
         <Route path="/suvincotton" element={<SUVICotton />} />
         <Route path="/australiancotton" element={<AustralianCotton />} />

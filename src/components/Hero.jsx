@@ -3,23 +3,18 @@ import { motion } from "framer-motion";
 import Button from '../animation/Button';
 import TextScroll from '../animation/Textscroll';
 import { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 
 
 
 function Hero  (){
+    const navigate = useNavigate();
 
-    const [showForm, setShowForm] = useState(false);
-
-     useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "https://js.hsforms.net/forms/embed/v2.js";
-        script.async = true;
-        document.body.appendChild(script);
-      }, []);
+  
   return (
     <div className='bg-black'>
       <div className='flex items-center justify-center h-[100vh] '>
-     <div className="flex flex-col lg:flex-row items-center justify-center bg-black px-4 md:px-10 pt-40 lg:pt-32 gap-10">
+     <div className="flex flex-col lg:flex-row items-center justify-center bg-black px-4 md:px-10 pt-40 md:pt-70 lg:pt-32 gap-10">
 
       {/* TEXT SECTION */}
       <motion.div
@@ -47,15 +42,15 @@ function Hero  (){
         </h2>
         <div className="flex flex-row  sm:flex-row md:flex-row lg:flex-row gap-4 mt-4  items-start ">
 
-            <p onClick={() => setShowForm(true)}  className="bg-white text-black hover:text-white hover:bg-white/50 
+            <p onClick={() => navigate("/contact")}  className="bg-white text-black hover:text-white hover:bg-white/50 
                                px-5 py-2 uppercase text-sm font-bold 
-                                transition-all duration-300 border-none">
+                                transition-all duration-300 border-none cursor-pointer">
             Existing Company
             </p>
 
-            <p onClick={() => setShowForm(true)}  className="bg-white text-black hover:text-white hover:bg-white/50 
+            <p  onClick={() => navigate("/contact")} className="bg-white text-black hover:text-white hover:bg-white/50 
                                px-5 py-2 uppercase text-sm font-bold 
-                              transition-all duration-300 border-none">
+                              transition-all duration-300 border-none cursor-pointer">
              Startup Brand
             </p>
 
@@ -81,7 +76,7 @@ function Hero  (){
      </div>
      </div>
 
-<div>
+<div className='pt-10 sm:pt-20 md:pt-50 lg:pt-5'>
   <TextScroll />
 </div>
   <div className=" px-4 md:px-10 md:ml-10">
@@ -147,15 +142,15 @@ function Hero  (){
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
 
-            <p onClick={() => setShowForm(true)}  className="bg-white text-black hover:text-white hover:bg-white/50 
+            <p  onClick={() => navigate("/contact")}  className="bg-white text-black hover:text-white hover:bg-white/50 
                                px-8 py-3 uppercase text-sm font-bold 
-                                transition-all duration-300 border-none">
+                                transition-all duration-300 border-none cursor-pointer">
              Talk to Sales Expert
             </p>
 
-            <p onClick={() => setShowForm(true)} className="bg-white text-black hover:text-white hover:bg-white/50 
+            <p   onClick={() => navigate("/contact")} className="bg-white text-black hover:text-white hover:bg-white/50 
                                px-8 py-3 uppercase text-sm font-bold 
-                              transition-all duration-300 border-none">
+                              transition-all duration-300 border-none cursor-pointer">
               Get Sample →
             </p>
 
@@ -168,31 +163,7 @@ function Hero  (){
   </div>
 </div>
        
-   {showForm && (
-  <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4">
-
-    <div className="bg-white rounded-lg relative w-full sm:max-w-xl md:max-w-2xl max-h-[80vh] overflow-y-auto">
-
-      {/* Close Button */}
-      <button
-        onClick={() => setShowForm(false)}
-        className="absolute top-3 right-4 text-xl font-bold text-gray-700 hover:text-white/50 bg-black text-white"
-      >
-        ✕
-      </button>
-
-      {/* HubSpot Form */}
-      <div
-        className="hs-form-frame max-w-xl mx-auto w-full min-h-[500px]"
-        data-region="na2"
-        data-form-id="a2dfc6ff-9c79-459c-9bcc-fdf12c54435b"
-        data-portal-id="245488615"
-      ></div>
-
-    </div>
-
-  </div>
-   )}
+  
 </div>
 
 );

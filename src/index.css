@@ -93,4 +93,51 @@ button:focus-visible {
     transform: translateX(-50%);
   }
 }
+/* HubSpot Form Override */
+.hs-form {
+  background-color: black !important;
+  color: white !important;
+  font-family: 'Poppins', 'Inter', sans-serif !important;
+}
 
+/* Labels */
+.hs-form label {
+  color: #ccc !important;
+  font-size: 14px;
+}
+
+/* Input Fields */
+.hs-form input,
+.hs-form textarea,
+.hs-form select {
+  background-color: #111 !important;
+  color: white !important;
+  border: 1px solid #333 !important;
+  border-radius: 8px !important;
+  padding: 10px !important;
+}
+
+/* Placeholder */
+.hs-form input::placeholder,
+.hs-form textarea::placeholder {
+  color: #777 !important;
+}
+
+/* Button */
+.hs-form .hs-button {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 999px !important;
+  padding: 12px 20px !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+}
+
+.hs-form .hs-button:hover {
+  background-color: #ddd !important;
+}
+
+/* Error text */
+.hs-error-msg {
+  color: red !important;
+}
